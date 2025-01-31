@@ -17,10 +17,10 @@ function sendMail (e) {
         // para enviar o e-mail com os detalhes fornecidos pelo usuário.
         Email.send({
             Host: "smtp.elasticemail.com",
-            Username: "hello@robsonsvicero.com.br",
+            Username: "robsonsvicero.designer@gmail.com",
             Password: "EF050380E2394F79AF140C4E6C984B1ADB88",
             To: "adm@powerbrainbr.com",
-            From: "hello@robsonsvicero.com.br",
+            From: "robsonsvicero.designer@gmail.com",
             Subject: `${name} Enviando E-mail Com Javascript`,
             Body: `Email: ${mail} \n \n ${message}`,
           }).then(() => {
