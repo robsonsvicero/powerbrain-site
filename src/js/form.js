@@ -18,7 +18,7 @@ function sendMail (e) {
         Email.send({
             Host: "smtp.elasticemail.com",
             Username: "robsonsvicero.designer@gmail.com",
-            Password: "EF050380E2394F79AF140C4E6C984B1ADB88",
+            Password: "5709BBF7DA58F6A78124FC8A089A060AEAF7",
             To: "adm@powerbrainbr.com",
             From: "robsonsvicero.designer@gmail.com",
             Subject: `${name} Enviando E-mail Com Javascript`,
