@@ -1,0 +1,33 @@
+.banner {
+    height: 1080px;
+}
+
+.hero {
+    background-image: url(../img/banner.png);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.hero .descricao {
+    margin-bottom: 104px;
+    margin-left: 10%;
+    max-width: 50%;
+    color: var(--high-pure);
+}
+
+.descricao h1 {
+    font-size: var(--h1);
+}
+
+.descricao p {
+    width: 85%;
+    font-size: 1.8rem;
+}
+
+.hero .button {
+    margin-left: 10%;
+}

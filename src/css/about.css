@@ -1,0 +1,25 @@
+.about {
+    background-color: var(--high-pure);
+}
+
+.about-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-infos .description {
+    width: 45%;
+}
+
+.about-infos .description p:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.about-infos .about-img {
+    width: 50%;
+}
+
+.about-infos .about-img img {
+    width: 100%;
+}

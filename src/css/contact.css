@@ -1,0 +1,105 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--high-pure);
+    font-family: var(--paragraph);
+}
+
+.chamada {
+    margin-bottom: 32px;
+}
+
+.chamada h2 {
+    color: var(--azul-700);
+    text-align: center;
+    font-family: var(--title);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.chamada p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--low-light);
+}
+
+form {
+    width: 50%;
+    background-color: #FFF;
+}
+
+form p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: tomato;
+    margin-top: -14px;
+}
+
+.forms input, 
+.forms textarea {
+    min-width: 100%;
+    padding: 10px;
+    background-color: #00000014;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px;
+}
+
+.forms textarea {
+    resize: vertical;
+}
+
+.forms input:hover,
+.forms input:focus,
+.forms textarea:hover,
+.forms textarea:focus {
+    outline: none;
+    border-color: var(--azul-500);
+    box-shadow: 0 0 0 0.3125rem #86CCED;
+}
+
+
+.forms button {
+    display: block;
+    min-width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--azul-700);
+    color: var(--high-pure);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.forms button:hover,
+.forms button:focus {
+    outline: none;
+    background-color: var(--azul-300);
+}
+
+.forms button:disabled {
+    cursor: not-allowed;
+    background: #555B69;
+}
+
+.mensagem-erro {
+    color: tomato;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.forms input.invalido, .forms textarea.invalido {
+    border-color: tomato;
+}
+
+.forms input.valido, .forms textarea.valido {
+    border-color: greenyellow;
+}

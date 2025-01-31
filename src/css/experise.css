@@ -1,0 +1,22 @@
+.expertise {
+    background-color: var(--high-light);
+}
+
+.expertise .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .expertise-img {
+    width: 50%;
+}
+
+.container .expertise-img img {
+    width: 100%;
+}
+
+.description {
+    width: 45%;
+}
+
