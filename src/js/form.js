@@ -9,10 +9,11 @@ function sendMail (e) {
     // Obtém os valores dos campos de entrada do formulário com base em seus respectivos IDs.
     const mail = document.getElementById('email').value;
     const message = document.getElementById('mensagem').value;
-    const name = document.getElementById('nome').value;
+    const name = document.getElementById('nome-completo').value;
+    const phone = document.getElementById('telefone').value;
 
     // Verifica se todos os campos (e-mail, mensagem e nome) foram preenchidos pelo usuário.
-    if (mail && message && name) {
+    if (mail && message && name && phone) {
         // Se todos os campos estiverem preenchidos, usa a biblioteca 'Email.js'
         // para enviar o e-mail com os detalhes fornecidos pelo usuário.
         Email.send({
@@ -22,7 +23,7 @@ function sendMail (e) {
             To: "adm@powerbrainbr.com",
             From: "robsonsvicero.designer@gmail.com",
             Subject: `${name} Enviando E-mail Com Javascript`,
-            Body: `Email: ${mail} \n \n ${message}`,
+            Body: `Email: ${mail} \n \n ${message} \n \n ${phone}`,
           }).then(() => {
             // Após o envio bem-sucedido, exibe um alerta informando que a mensagem foi enviada
             alert('Mensagem enviada!');
