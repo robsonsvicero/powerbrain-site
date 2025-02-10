@@ -27,79 +27,122 @@
 }
 
 form {
-    width: 50%;
-    background-color: #FFF;
+    width: 100%;
+    max-width: 50rem;
 }
 
 form p {
     font-size: 1.4rem;
     font-weight: 600;
-    color: tomato;
-    margin-top: -14px;
+    margin-bottom: 40px;
 }
 
-.forms input, 
-.forms textarea {
-    min-width: 100%;
-    padding: 10px;
-    background-color: #00000014;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    margin-bottom: 15px;
+label,
+input,
+textarea,
+button {
+	display: block;
 }
 
-.forms textarea {
-    resize: vertical;
+input,
+textarea,
+button {
+	width: 100%;
+	font: inherit;
+	padding: 1.25rem;
+	font-weight: 700;
 }
 
-.forms input:hover,
-.forms input:focus,
-.forms textarea:hover,
-.forms textarea:focus {
-    outline: none;
-    border-color: var(--azul-500);
-    box-shadow: 0 0 0 0.3125rem #86CCED;
+input,
+textarea {
+	margin-bottom: 1rem;
+	color: white;
+	background: #32364431;
+	border: 0.125rem solid transparent;
+	border-radius: 1.125rem;
+	transition: border-color 0.3s,
+		box-shadow 0.3s;
 }
 
-
-.forms button {
-    display: block;
-    min-width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    background-color: var(--azul-700);
-    color: var(--high-pure);
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+	outline: none;
+	border-color: var(--azul-500);
+	box-shadow: 0 0 0 0.3125rem var(--azul-300);
 }
 
-.forms button:hover,
-.forms button:focus {
-    outline: none;
-    background-color: var(--azul-300);
+label {
+	margin-bottom: 0.5rem;
+	color: #84868f;
 }
 
-.forms button:disabled {
-    cursor: not-allowed;
-    background: #555B69;
+textarea {
+	min-height: 12.5rem;
+	resize: vertical;
 }
 
-.mensagem-erro {
-    color: tomato;
-    font-size: 12px;
-    margin-top: 5px;
-    display: none;
+button {
+	border: none;
+	border-radius: 99px;
+	color: white;
+	background-color: #1d90f5;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-.forms input.invalido, .forms textarea.invalido {
-    border-color: tomato;
+button:hover,
+button:focus {
+	outline: none;
+	background-color: #1c70d3;
 }
 
-.forms input.valido, .forms textarea.valido {
-    border-color: greenyellow;
+button:disabled {
+	cursor: not-allowed;
+	background-color: #555b69;
+}
+
+.success,
+.error {
+	text-align: center;
+}
+
+.success {
+	color: yellowgreen;
+}
+
+.error {
+	color: tomato;
+}
+
+/**/
+
+.popup-message {
+	position: fixed;
+	top: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #4caf50;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	z-index: 1000;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.popup-message.error {
+	background: #d9534f;
+}
+
+.popup-message.fade-out {
+	opacity: 0;
+}
+
+/* Borda vermelha para campos não preenchidos */
+.error-border {
+	border: 2px solid #d9534f !important;
 }
