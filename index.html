@@ -2,56 +2,74 @@
 <html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="https://kit.fontawesome.com/fc3986c9ff.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="./src/reset.css">
-	<link rel="stylesheet" href="./src/index.css">
-	<link rel="stylesheet" href="./src/variables.css">
-	<link rel="stylesheet" href="./src/css/header.css">
-	<link rel="stylesheet" href="./src/css/home.css">
-	<link rel="stylesheet" href="./src/css/about.css">
-	<link rel="stylesheet" href="./src/css/experise.css">
-	<link rel="stylesheet" href="./src/css/contact.css">
-	<link rel="stylesheet" href="./src/css/responsive.css">
-	<link rel="stylesheet" href="./src/css/footer.css">
+  <meta name="description"
+    content="Especialista em soluções que envolvam a aplicação de tecnologias orientadas a dados para produzir conhecimento e respostas de interesse dos clientes.">
+  <meta name="robots" content="follow, index, max-snippet:-1, max-image-preview:large">
+  <meta property="og:title" content="PowerBrain - IA aplicada ao setor de energia">
+  <meta property="og:url" content="https://powerbrainbr.com/">
 
-	<title>PowerBrain</title>
+  <script src="https://kit.fontawesome.com/fc3986c9ff.js" crossorigin="anonymous"></script>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/global.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="stylesheet" href="./src/css/secoes/header.css">
+  <link rel="stylesheet" href="./src/css/secoes/banner.css">
+  <link rel="stylesheet" href="./src/css/secoes/about.css">
+  <link rel="stylesheet" href="./src/css/secoes/expertise.css">
+  <link rel="stylesheet" href="./src/css/secoes/contact.css">
+  <link rel="stylesheet" href="./src/css/secoes/footer.css">
+
+  <title>PowerBrain - IA aplicada ao setor de energia</title>
 </head>
 
 <body>
-	<header class="header">
-		<a href="/index.html" class="logo"><img src="./src/img/logo_horizontal-branco.png" alt=""></a>
-		<nav class="nav">
-			<button class="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu"
-				aria-expanded="false"><span class="hamburger"></span>
-			</button>
-			<ul class="menu" id="menu" role="menu">
-				<li><a href="#home">Início</a></li>
-				<li><a href="#about">Sobre Nós</a></li>
-				<li><a href="#expertise">O que fazemos</a></li>
-				<li><a href="#contact">Contato</a></li>
-			</ul>
-		</nav>
-	</header>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="menu-header row justify-content-between align-ítems-center">
 
-	<section class="banner" id="home">
-		<div class="hero">
-			<div class="descricao">
-				<h1>IoT e Telemetria Avançada a serviço da sua operação!</h1>
+        <a href="/index.html" class="logo"><img src="./src/images/logo_horizontal-branco.png" alt=""></a>
+        <nav class="nav">
+          <button class="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu"
+            aria-expanded="false"><span class="hamburger"></span>
+          </button>
+          <ul class="menu" id="menu" role="menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#expertise">O que fazemos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="letter-banner" id="home">
+    <div class="banner">
+      <div class="description">
+        <h1>IoT e Telemetria Avançada a serviço da sua operação!</h1>
 				<p>Nossa expertise em IoT e Telemetria Avançada nos permite desenvolver soluções que vão muito além de
 					um monitoramento remoto. Integramos dados de diferentes ativos em um mesmo ambiente.</p>
-			</div>
+      </div>
+    </div>
+    <div class="next-section">
+      <div class="btn-next-section">
+        <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </section>
 
-			<a href="#contact" class="button" type="button" target="_blank" rel="noopener noreferer">
-				<p>Entre em contato</p>
-			</a>
-		</div>
-	</section>
-
-	<section class="about section" id="about">
+  <section class="about section" id="about">
 		<div class="about-infos">
 			<div class="description">
 				<h2>Sobre Nós</h2>
@@ -67,15 +85,15 @@
 					consectetur tenetur perferendis culpa enim asperiores ut aperiam nobis atque cupiditate.</p>
 			</div>
 			<div class="about-img">
-				<img src="./src/img/mapbox-D8yv3j37S9Y-unsplash.jpg" alt="Reunião de negócios">
+				<img src="./src/images/brainstorm.jpg" alt="Reunião de negócios">
 			</div>
 		</div>
 	</section>
 
-	<section class="expertise section" id="expertise">
-		<div class="container">
+  <section class="expertise section" id="expertise">
+		<div class="xp container">
 			<div class="expertise-img">
-				<img src="./src/img/ruthson-zimmerman-FVwG5OzPuzo-unsplash.jpg" alt="Imagem referente a IoT">
+				<img src="./src/images/dashboard.jpg" alt="Imagem referente a IoT">
 			</div>
 
 			<div class="description">
@@ -86,11 +104,15 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae libero molestias quia ab iste sunt
 					ullam repellat eius illo eos, quam tempore officiis nesciunt illum quibusdam quis ex? Culpa, odio?
 				</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci sapiente excepturi eos
+					quibusdam consectetur, quas quos quis. Provident consectetur tenetur perferendis culpa enim
+					asperiores ut aperiam nobis atque cupiditate.Lorem ipsum dolor sit amet, consectetur adipisicing
+					elit.</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="forms section" id="contact">
+  <section class="forms section" id="contact">
 		<div class="chamada">
 			<h2 class="titulo-chamada">FICOU COM DÚVIDA? NOS MANDE UMA MENSAGEM!</h2>
 			<p class="texto-chamada">Caso tenha ficado com qualquer dúvida basta nos mandar uma <br>mensagem que
@@ -98,7 +120,7 @@
 			</p>
 		</div>
 
-		<form action="https://formsubmit.co/ajax/rsvicero@hotmail.com" method="post" data-form>
+		<form action="https://formsubmit.co/ajax/contato@powerbrainbr.com" method="post" data-form>
 			<label for="nome">Nome*</label>
 			<input type="text" name="nome" id="nome" required>
 
@@ -120,9 +142,9 @@
 
 	</section>
 
-	<footer class="menu-footer">
+  <footer class="menu-footer">
 		<div class="container itens-footer">
-			<a href="/"><img src="./src/img/logo_horizontal-branco.png" alt="PowerBrain" class="logo"></a>
+			<a href="/"><img src="./src/images/logo_horizontal-branco.png" alt="PowerBrain" class="logo"></a>
 
 			<div class="contato">
 				<div class="atendimento">
@@ -136,7 +158,7 @@
 					<h3>Nos siga nas redes sociais</h3>
 					<ul>
 						<li><a
-								href="https://www.instagram.com/sacadaclassz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i
+								href="#"><i
 									class="fa-brands fa-instagram"></i></a></li>
 					</ul>
 				</div>
@@ -144,14 +166,13 @@
 		</div>
 		<div class="made">
 			<p>Copyright © 2025 PowerBrain | Desenvolvido por </p><a href="http://robsonsvicero.com.br"><img
-					src="./src/img/logo_robsonsvicero.png" alt=""></a>
+					src="./src/images/logo_robsonsvicero.png" alt=""></a>
 		</div>
 	</footer>
 
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-	<script src="./src/js/index.js"></script>
-	<script src="./src/js/header.js"></script>
-	<script src="./src/js/form.js"></script>
+
+  <script src="./src/js/index.js"></script>
+  <script src="./src/js/form.js"></script>
 </body>
 
 </html>

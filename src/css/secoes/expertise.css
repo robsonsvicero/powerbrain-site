@@ -14,9 +14,9 @@
 
 .xp .expertise-img img {
     width: 100%;
+    padding-top: 5%;
 }
 
-.description {
+.xp .description {
     width: 45%;
 }
-
