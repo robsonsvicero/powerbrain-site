@@ -1,52 +1,39 @@
 const nav = document.querySelector(".nav");
 const btnMenu = document.querySelector(".btn-menu");
 const menu = document.querySelector(".menu");
-const menuLink = document.querySelectorAll(".menu a");
+const menuLinks = document.querySelectorAll(".menu a");
 
 function handleButtonClick(event) {
-  if (event.type === "touchstart") event.preventDefault();
   event.stopPropagation();
   nav.classList.toggle("active");
+  setAria(nav.classList.contains("active"));
+
   handleClickOutside(menu, () => {
     nav.classList.remove("active");
-    setAria();
+    setAria(false);
   });
-  setAria();
 }
 
 function handleClickOutside(targetElement, callback) {
-  const html = document.documentElement;
   function handleHTMLClick(event) {
-    if (!targetElement.contains(event.target)) {
-      targetElement.removeAttribute("data-target");
-      html.removeEventListener("click", handleHTMLClick);
-      html.removeEventListener("touchstart", handleHTMLClick);
+    if (!targetElement.contains(event.target) && !btnMenu.contains(event.target)) {
+      document.removeEventListener("click", handleHTMLClick);
       callback();
     }
   }
-  if (!targetElement.hasAttribute("data-target")) {
-    html.addEventListener("click", handleHTMLClick);
-    html.addEventListener("touchstart", handleHTMLClick);
-    targetElement.setAttribute("data-target", "");
-  }
+  document.addEventListener("click", handleHTMLClick);
 }
 
-menuLink.forEach((link) => {
+menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("active");
-    setAria();
+    setAria(false);
   });
 });
 
-function setAria() {
-  const isActive = nav.classList.contains("active");
+function setAria(isActive) {
   btnMenu.setAttribute("aria-expanded", isActive);
-  if (isActive) {
-    btnMenu.setAttribute("aria-label", "Fechar Menu");
-  } else {
-    btnMenu.setAttribute("aria-label", "Abrir Menu");
-  }
+  btnMenu.setAttribute("aria-label", isActive ? "Fechar Menu" : "Abrir Menu");
 }
 
 btnMenu.addEventListener("click", handleButtonClick);
-btnMenu.addEventListener("touchstart", handleButtonClick);
