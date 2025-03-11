@@ -15,7 +15,15 @@
     flex-direction: column;
     align-items: center;
     margin-top: -14px;
-    min-width: 400px;
+    width: 25%;
+}
+
+.itens-footer .logo p {
+    margin-top: 40px;
+    width: 75%;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: var(--high-pure);
 }
 
 .logo .logo-footer {
@@ -25,15 +33,21 @@
 .itens-footer .ft-navigation {
     display: flex;
     flex-direction: row;
-    gap: 80px;
+    justify-content: space-between;
 }
 
-.itens-footer .ft-navigation ul {
+.itens-footer .ft-navigation .navegacao,
+.itens-footer .ft-navigation .contatos {
+    margin-bottom: 64px;
+}
+
+.ft-menu {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    
-    justify-content: space-around;
-}
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+  }
 
 .itens-footer .ft-navigation a {
     display: block;
@@ -54,12 +68,8 @@
     font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     color: var(--high-pure);
-}
-
-.itens-footer .ft-navigation .atendimento ul li{
-    margin-bottom: 18px;
 }
 
 .itens-footer .ft-navigation .redes-sociais ul {
@@ -67,6 +77,7 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
 .itens-footer .ft-navigation .redes-sociais a i {
     font-size: 3.2rem;
     transition: 0.5s;
