@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 960px;
-  background-image: url("./src/images/hero.png");
+  background-image: url("../src/images/hero.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
