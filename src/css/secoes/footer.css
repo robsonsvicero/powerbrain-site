@@ -64,6 +64,7 @@
 
 .itens-footer .ft-navigation .redes-sociais ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .itens-footer .ft-navigation .redes-sociais a i {
