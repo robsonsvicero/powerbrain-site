@@ -21,7 +21,7 @@
   transition: 0.1s;
 }
 
-.banner .description {
+.banner-description {
   display: flex;
   flex-direction: column;
   max-width: 50%;
@@ -31,7 +31,7 @@
   margin-left: 10%;
 }
 
-.banner .description h1 {
+.banner-description h1 {
   font-family: var(--paragraph);
   font-style: normal;
   font-size: var(--h1);
@@ -40,7 +40,7 @@
   text-align: left;
 }
 
-.banner .description p {
+.banner-description p {
   font-family: var(--paragraph);
   font-size: 1.8rem;
   line-height: 2.8rem;

@@ -1,22 +1,29 @@
 .expertise {
-    background-color: var(--high-light);
+	background-color: var(--high-light);
 }
 
-.expertise .xp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.xp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.xp-description {
+	width: 50%;
+	opacity: 0;
+	transform: translateX(50px);
+	transition: all 1s ease-in-out;
+}
+
+.xp-description p:nth-child(2) {
+	margin-bottom: 16px;
 }
 
 .xp .expertise-img {
-    width: 50%;
+	width: 45%;
 }
 
 .xp .expertise-img img {
-    width: 100%;
-    padding-top: 5%;
-}
-
-.xp .description {
-    width: 45%;
+	width: 100%;
+	padding-top: 5%;
 }

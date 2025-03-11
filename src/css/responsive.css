@@ -7,46 +7,16 @@
     height: 660px;
   }
 
-  div.banner {
+  .letter-banner .banner {
     height: 660px;
   }
 
-  .letter-banner .banner .description {
+  .letter-banner .banner-description {
     max-width: 100%;
   }
 
-  .letter-banner .banner .description h1 {
+  .letter-banner .banner-description h1 {
     font-size: var(--h2);
-  }
-
-  .about .about-infos .about-img img,
-  .expertise .xp .expertise-img img {
-    padding: 0;
-  }
-
-  .about .about-infos,
-  section.expertise .xp {
-    flex-direction: column;
-  }
-
-  .about .about-infos .description,
-  .about .about-infos .about-img,
-  .expertise .xp .expertise-img,
-  .expertise .xp .description {
-    width: 100%;
-  }
-
-  .expertise .xp .description {
-    order: 1;
-  }
-
-  .expertise .xp .expertise-img {
-    order: 2;
-  }
-
-  .about .about-infos .description,
-  .expertise .xp .description {
-    margin-bottom: 64px;
   }
 
 }
@@ -123,29 +93,90 @@
     top: -0.75rem;
   }
 
-  #home,
-  div.banner {
+  #home {
     height: 500px;
   }
 
-  .letter-banner .banner .description h1 {
+  .banner,
+  .about-infos,
+  .xp,
+  .form-container {
+    padding-inline: 80px;
+  }
+
+  .letter-banner .banner-description h1 {
     font-size: 3.2rem;
   }
 
-  .letter-banner .banner .description p {
+  .letter-banner .banner-description p {
     font-size: 1.6rem;
+  }  
+
+  .about .about-infos .about-img img,
+  .expertise .xp .expertise-img img {
+    padding: 0;
   }
+
+  .about .about-infos,
+  section.expertise .xp {
+    flex-direction: column;
+  }
+
+  .about .about-infos .description,
+  .about .about-infos .about-img,
+  .expertise .xp .expertise-img,
+  .expertise .xp .xp-description {
+    width: 100%;
+  }
+
+  .expertise .xp .description {
+    order: 1;
+  }
+
+  .expertise .xp .expertise-img {
+    order: 2;
+  }
+
+  .about .about-infos .description,
+  .expertise .xp .xp-description {
+    margin-bottom: 64px;
+  }
+
+  .forms form {
+    width: 100%;
+  }
+
+  .forms .form-btn {
+    width: 50%;
+}
 }
 
 @media(max-width: 480px) {
+  .description h2,
+  .xp .xp-description h2,
+.banner-description h2  {
+    font-size: 3.2rem;
+  }
+
   .button {
     padding: 40px;
   }
 
-  .menu-header,
+  .banner,
+  .about-infos,
+  .xp,
+  .form-container {
+    padding-inline: 16px;
+  }
+
+  .header .menu-header,
   footer.footer .social-container {
     padding: 1.6rem;
   }
+
+  .forms .form-btn {
+    width: 100%;
+}
 
   footer.menu-footer .itens-footer {
     flex-direction: column;

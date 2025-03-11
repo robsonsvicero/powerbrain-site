@@ -7,11 +7,11 @@
   justify-content: space-between;
 }
 
-.about-infos .description {
+.about-description {
   width: 45%;
 }
 
-.about-infos .description p:nth-child(2) {
+.about-description p:nth-child(2) {
   margin-bottom: 16px;
 }
 
@@ -21,5 +21,5 @@
 
 .about-infos .about-img img {
   width: 100%;
-  padding-top: 20%;
+  padding-top: 5%;
 }

@@ -1,40 +1,47 @@
 .forms {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--high-pure);
-    font-family: var(--paragraph);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #fafafa;
+	font-family: var(--fonte-texto);
+}
+
+.form-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .chamada {
-    margin-bottom: 32px;
+	margin-bottom: 32px;
 }
 
 .chamada h2 {
-    color: var(--azul-700);
-    text-align: center;
-    font-family: var(--title);
-    font-size: 2.4rem;
-    font-weight: 700;
-    margin-bottom: 11px;
+	color: var(--cor-fundo-escuro);
+	text-align: center;
+	font-family: var(--fonte-titulo);
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin-bottom: 11px;
 }
 
 .chamada p {
-    font-size: 1.6rem;
-    text-align: center;
-    color: var(--low-light);
+	font-size: 1.6rem;
+	text-align: center;
+	color: #555b69;
 }
 
 form {
-    width: 100%;
-    max-width: 50rem;
+	width: 80%;
 }
 
 form p {
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 40px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 40px;
 }
 
 label,
@@ -56,7 +63,7 @@ button {
 input,
 textarea {
 	margin-bottom: 1rem;
-	color: white;
+	color: var(--cor-branca);
 	background: #32364431;
 	border: 0.125rem solid transparent;
 	border-radius: 1.125rem;
@@ -83,37 +90,33 @@ textarea {
 	resize: vertical;
 }
 
-button {
-	border: none;
+.form-btn {
+	width: 30%;
+	padding: 24px 60px;
+	justify-self: center;
+	font-size: var(--p);
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;outline: none;
+	background-color: transparent;
+	border: 2px solid var(--azul-500);
+	color: var(--azul-500);
 	border-radius: 99px;
-	color: white;
-	background-color: #1d90f5;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: all 0.3s ease-in-out;
 }
 
-button:hover,
-button:focus {
-	outline: none;
-	background-color: #1c70d3;
+.form-btn:hover,
+.form-btn:focus {
+	transition: all 0.3s ease-in-out;	
+	background-color: var(--azul-500);
+	color: var(--high-pure);
 }
 
-button:disabled {
+.form-btn:disabled {
 	cursor: not-allowed;
 	background-color: #555b69;
-}
-
-.success,
-.error {
-	text-align: center;
-}
-
-.success {
-	color: yellowgreen;
-}
-
-.error {
-	color: tomato;
 }
 
 /**/
@@ -124,7 +127,7 @@ button:disabled {
 	left: 50%;
 	transform: translateX(-50%);
 	background: #4caf50;
-	color: #fff;
+	color: var(--cor-branca);
 	padding: 10px 20px;
 	border-radius: 5px;
 	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
