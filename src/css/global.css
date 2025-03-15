@@ -1,8 +1,12 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   font-size: 62.5%;
   font-weight: 400;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
 }
 
 .container {
-  min-width: 100vw;
+  max-width: 100%;
   padding: auto 10%;
 }
 
