@@ -38,6 +38,7 @@
 
 .itens-footer .ft-navigation .navegacao,
 .itens-footer .ft-navigation .contatos {
+    width: 255px;
     margin-bottom: 64px;
 }
 
