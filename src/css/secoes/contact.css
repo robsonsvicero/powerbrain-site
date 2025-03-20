@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #fafafa;
+	background-color: var(--high-pure);
 	font-family: var(--fonte-texto);
 }
 
