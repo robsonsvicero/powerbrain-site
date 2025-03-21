@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://powerbrainbr.com/sitemap.xml
