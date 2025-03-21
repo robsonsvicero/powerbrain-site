@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 100;
+  z-index: 10;
 }
 
 .whatsapp-button i {
