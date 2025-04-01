@@ -4,35 +4,143 @@
 
 .xp {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
+	gap: 24px;
+	padding: 10rem 10%;
 }
 
-.xp-description {
-	width: 50%;
-	opacity: 0;
-	transform: translateX(50px);
-	transition: all 1s ease-in-out;
-}
+/* .xp-description {
+	margin-bottom: 80px;
+} */
 
 .xp-description p:nth-child(2) {
 	margin-bottom: 16px;
 }
 
-.xp .expertise-img {
-	width: 45%;
-}
-
-.xp .expertise-img img {
+.slider-container {
 	width: 100%;
-	padding-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
 }
 
-.xp-list {
-	list-style: disc;
-	padding-left: 24px;
+.btn {
+	background: var(--azul-500);
+	color: var(--high-light);
+	border: none;
+	box-shadow: 4px 4px 5px 0px rgba(23, 23, 23, 0.31);
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(23, 23, 23, 0.31);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(23, 23, 23, 0.31);
+	width: 60px;
+	padding: 10px 20px;
+	font-size: 32px;
+	cursor: pointer;
+	border-radius: 99px;
+	transition: 0.3s;
 }
 
-.xp-list li {
-	margin-bottom: 16px;
+.btn:hover {
+	background: var(--azul-300);
+}
+
+.slider {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	scroll-snap-type: x mandatory;
+	gap: 25px;
+	padding: 10px 0;
+	width: 90vw;
+	max-width: 80%;
+	height: 70vh;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.card {
+	position: absolute;
+  top: calc(50% - 150px);
+  left: calc(50%-100px);
+  width: 250px;
+  height: 350px;
+  background-color: var(--high-light);
+	color: var(--azul-500);
+  transition: 0.5s;
+	border-radius: 8px;
+  box-shadow: 4px 4px 5px rgba(23, 23, 23, 0.3);
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  user-select: none;
+  
+}
+
+.card img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 8px 8px 0 0;
+}
+
+.card-text {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 18px 15px 12px;
+}
+
+.card-text p {
+	font-size: 14px;
+}
+
+.slider .card:nth-child(1) {
+  transform: translate3d(-150px, 0, 0) scale(0.9) rotateY(15deg);
+  z-index: 1;
+}
+
+.slider .card:nth-child(2) {
+  transform: translate3d(-150px, 0, 0) scale(0.9) rotateY(15deg);
+  z-index: 2;
+}
+
+.slider .card:nth-child(3) {
+  transform: translate3d(0px, 0, 0) scale(1) rotateY(0deg);
+  z-index: 7;
+}
+
+.slider .card:nth-child(4) {
+  transform: translate3d(150px, 0, 0) scale(0.9) rotateY(-15deg);
+  z-index: 4;
+}
+
+
+/* .card.active {
+	flex: 0 0 300px;
+	width: 300px;
+	height: 400px;
+	opacity: 1;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+} */
+
+/* Estilo dos dots */
+.pagination {
+	display: flex;
+	gap: 8px;
+	margin-top: -40px;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	background: #bbb;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.dot.active {
+	background: var(--azul-500);
+	transform: scale(1.2);
 }

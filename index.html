@@ -17,7 +17,6 @@
 	<meta property="og:type" content="website">
 	<meta name="thumbnail" content="https://powerbrainbr.com/image.png">
 
-
 	<script src="https://kit.fontawesome.com/fc3986c9ff.js" crossorigin="anonymous"></script>
 
 	<link rel="canonical" href="https://powerbrainbr.com">
@@ -103,13 +102,10 @@
 		</div>
 	</section>
 
-	<section class="expertise section hidden" id="expertise">
+	<section class="expertise" id="expertise">
 		<div class="xp">
-			<div class="expertise-img hidden">
-				<img src="./src/images/dashboard.jpg" alt="Imagem referente a IoT">
-			</div>
 
-			<div class="xp-description hidden">
+			<div class="xp-description">
 				<h2>O que fazemos</h2>
 				<p>Na PowerBrain, desenvolvemos soluções tecnológicas de ponta para enfrentar os desafios mais complexos do
 					setor de energia. Nossos projetos são estruturados com base em inteligência artificial, análise avançada de
@@ -117,22 +113,54 @@
 					performance.</p>
 				<p>Nosso portfólio de atuação inclui:
 				</p>
-				<br>
-				<ul class="xp-list">
-					<li><strong>Soluções de Inteligência Artificial</strong> para otimização de processos e análise preditiva;
-					</li>
 
-					<li><strong>Desenvolvimento de Algoritmos Avançados</strong> para gestão e tomada de decisão baseada em dados;
-					</li>
-
-					<li><strong>Projetos Estratégicos de Tecnologia</strong> aplicados ao setor de energia, utilizando modelos
-						estatísticos e machine learning;</li>
-					<li><strong>Consultoria e Pesquisa Aplicada,</strong> explorando novos caminhos para inovação digital.</li>
-				</ul>
 				<BR>
 				<p>Estamos sempre à frente, transformando dados em soluções inteligentes para um setor mais eficiente e
 					sustentável.</p>
 
+			</div>
+
+			<div class="slider-container">
+				<button class="btn prev" id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+				<div class="slider">
+					<div class="card">
+						<img src="./src/images/card1.png" alt="Imagem AI">
+						<div class="card-text">
+							<h3>Soluções de Inteligência Artificial</h3>
+							<p>Para otimização de processos e análise preditiva</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="./src/images/card2.png" alt="Imagem Desenvolvimento de Algoritmos">
+						<div class="card-text">
+							<h3>Desenvolvimento de Algoritmos Avançados</h3>
+							<p>Gestão e tomada de decisão baseada em dados</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="./src/images/card3.png" alt="Imagem Código">
+						<div class="card-text">
+							<h3>Projetos Estratégicos de Tecnologia</h3>
+							<p>Aplicados ao setor de energia, utilizando modelos estatísticos e machine learning</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="./src/images/card4.png" alt="Imagem gráficos">
+						<div class="card-text">
+							<h3>Consultoria e Pesquisa Aplicada</h3>
+							<p>Explorando novos caminhos para inovação digital</p>
+						</div>
+					</div>
+				</div>
+
+				<button class="btn next" id="next"><i class="fa-solid fa-chevron-right"></i></button>
+			</div>
+			<div class="pagination">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
 			</div>
 		</div>
 	</section>
@@ -215,6 +243,7 @@
 
 	<script src="./src/js/index.js"></script>
 	<script src="./src/js/header.js"></script>
+	<script src="./src/js/expertise.js"></script>
 	<script src="./src/js/animation.js"></script>
 	<script src="./src/js/form.js"></script>
 </body>
