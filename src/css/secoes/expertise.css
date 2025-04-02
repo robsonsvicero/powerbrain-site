@@ -124,11 +124,12 @@
 	height: 12px;
 	background: #bbb;
 	border-radius: 50%;
-	cursor: pointer;
-	transition: 0.3s;
+	cursor: none;
+	transition: 0.3s all ease-in-out;
 }
 
 .dot.active {
 	background: var(--azul-500);
-	transform: scale(1.2);
+	transform: scale(1.4);
+	transition: 0.3s all ease-in-out;
 }
