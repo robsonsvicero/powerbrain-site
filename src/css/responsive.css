@@ -161,8 +161,7 @@
     order: 2;
   }
 
-  .about .about-infos .description,
-  .expertise .xp .xp-description {
+  .about .about-infos .description {
     margin-bottom: 64px;
   }
 
