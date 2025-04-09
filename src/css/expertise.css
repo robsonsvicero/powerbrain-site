@@ -155,7 +155,7 @@
 	height: 12px;
 	background: #bbb;
 	border-radius: 50%;
-	cursor: pointer;
+	cursor: none;
 	transition: 0.3s all ease-in-out;
 }
 
