@@ -1,0 +1,111 @@
+.footer {
+    background-color: var(--azul-500);
+    padding-top: 80px;
+}
+
+.itens-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding: 0 10%;
+}
+
+.itens-footer .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -14px;
+    width: 25%;
+}
+
+.itens-footer .logo p {
+    margin-top: 40px;
+    width: 75%;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color: var(--high-pure);
+}
+
+.logo .logo-footer {
+    min-height: 75px;
+}
+
+.itens-footer .ft-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.itens-footer .ft-navigation .navegacao,
+.itens-footer .ft-navigation .contatos {
+    width: 255px;
+    margin-bottom: 64px;
+}
+
+.ft-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+  }
+
+.itens-footer .ft-navigation a {
+    display: block;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ffffffbe;
+}
+
+.itens-footer .ft-navigation a:hover {
+    background-color: transparent;
+    color: var(--azul-700);
+}
+
+.itens-footer .ft-navigation .navegacao h3,
+.itens-footer .ft-navigation .contatos h3,
+.itens-footer .ft-navigation .redes-sociais h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--high-pure);
+}
+
+.itens-footer .ft-navigation .redes-sociais ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.itens-footer .ft-navigation .redes-sociais a i {
+    font-size: 3.2rem;
+    transition: 0.5s;
+    color: #ffffffbe;
+}
+
+.itens-footer .ft-navigation .redes-sociais a i:hover {
+    color: var(--azul-700);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.made {
+    display: flex;
+    background-color: var(--low-medium);
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    color: var(--high-medium);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.made a {
+    margin-left: 4px;
+}
+
+.made a:hover {
+    color: var(--p500);
+}

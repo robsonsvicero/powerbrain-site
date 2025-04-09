@@ -1,27 +1,55 @@
 let prev = document.querySelector('.prev');
 let next = document.querySelector('.next');
 let dots = document.querySelectorAll('.dot');
-let currentIndex = Math.floor(dots.length / 2); // Iniciar no meio
-let cards = document.querySelectorAll('.card');
-
-// Atualizar os dots no carregamento
-updateDots(currentIndex);
+let slider = document.querySelector('.slider');
+let cards = Array.from(document.querySelectorAll('.card'));
+let currentIndex = 2; // Começa no card central (índice 2)
 
 function updateDots(index) {
   dots.forEach(dot => dot.classList.remove('active'));
   dots[index].classList.add('active');
 }
 
+function rotateSliderTo(index) {
+  // Reorganiza os cards no DOM
+  const total = cards.length;
+  const offset = (index - currentIndex + total) % total;
+
+  for (let i = 0; i < offset; i++) {
+    slider.appendChild(slider.firstElementChild);
+  }
+
+  cards = Array.from(document.querySelectorAll('.card')); // Atualiza referência
+  currentIndex = index;
+  updateDots(currentIndex);
+}
+
 next.addEventListener('click', function () {
-  document.querySelector('.slider').appendChild(cards[0]);
-  cards = document.querySelectorAll('.card');
+  slider.appendChild(slider.firstElementChild);
+  cards = Array.from(document.querySelectorAll('.card'));
   currentIndex = (currentIndex + 1) % dots.length;
   updateDots(currentIndex);
 });
 
 prev.addEventListener('click', function () {
-  document.querySelector('.slider').prepend(cards[cards.length - 1]);
-  cards = document.querySelectorAll('.card');
+  slider.prepend(slider.lastElementChild);
+  cards = Array.from(document.querySelectorAll('.card'));
   currentIndex = (currentIndex - 1 + dots.length) % dots.length;
   updateDots(currentIndex);
 });
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    if (index !== currentIndex) {
+      rotateSliderTo(index);
+    }
+  });
+});
+
+cards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    rotateSliderTo(index);
+  });
+});
+
+updateDots(currentIndex); // Inicia com o dot correto

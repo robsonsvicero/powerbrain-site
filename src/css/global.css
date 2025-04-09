@@ -1,3 +1,50 @@
+/* VARIÁVEIS */
+:root {
+  /* Cores */
+  --azul-300: #86CCED;
+  --azul-500: #3688C6;
+  --azul-700: #113872;
+
+  /* Cores high */
+  --high-pure: #FFFFFF;
+  --high-light: #F9F9F9;
+  --high-medium: #EDEDED;
+
+  /* Cores low */
+  --low-pure: #0C0C11;
+  --low-light: #333333;
+  --low-medium: #202226;
+}
+
+:root {
+  /* Tipografia */
+  --h1: 5.6rem;
+  --h2: 4rem;
+  --h3: 3.2rem;
+  --p: 1.8rem;
+
+  --title: "League Spartan", sans-serif;
+  --paragraph: "Lato", sans-serif;
+}
+
+ /* RESET */
+ *{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: var(--cor-branca);
+}
+
+ul{
+  list-style: none;
+}
+
 html, body {
   overflow-x: hidden;
   width: 100%;
@@ -14,6 +61,26 @@ body {
   font-size: var(--p);
   font-weight: 400;
   color: var(--low-medium);
+}
+
+.section {
+  padding: 10rem 8%;
+}
+
+.subtitle {
+  font-family: var(--title);
+  font-size: var(--h2);
+  color: var(--azul-700);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: var(--paragraph);
+  font-size: var(--p);
+  font-weight: 400;
+  color: var(--low-light);
 }
 
 .whatsapp-button {
@@ -42,80 +109,6 @@ body {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.container {
-  max-width: 100%;
-  padding: auto 10%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.justify-content-between {
-  justify-content: space-between;
-}
-
-.alinhar-itens-no-centro {
-  align-items: center;
-}
-
-.section {
-  padding: 10rem 10%;
-}
-
-.button {
-  display: flex;
-  background-color: var(--azul-500);
-  padding: 12px 24px;
-  border-radius: 8px;
-  min-width: 320px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
-
-.button:hover,
-.button:hover p {
-  background-color: var(--azul-300);
-  color: var(--azul-700);
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-
-.button p {
-  font-size: var(--p);
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--high-pure);
-}
-
-.button i {
-  color: var(--high-pure);
-  font-size: 2rem;
-  margin-left: 24px;
-}
-
-.description h2,
-.banner-description h2,
-.xp .xp-description h2 {
-  font-family: var(--title);
-  font-size: var(--h2);
-  color: var(--azul-700);
-  margin-bottom: 24px;
-  text-transform: uppercase;
-}
-
-.description p,
-.banner-description p,
-.xp .xp-description p {
-  font-family: var(--paragraph);
-  font-size: var(--p);
-  font-weight: 400;
-  color: var(--low-light);
-}
-
 .hidden {
   opacity: 0;
   filter: blur(15px);
@@ -126,7 +119,7 @@ body {
   transform: translateX(-100%);
 }
 
-.about-img {
+.section-banner {
   transform: translateX(100%) !important;
 }
 

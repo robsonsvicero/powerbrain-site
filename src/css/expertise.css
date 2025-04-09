@@ -1,5 +1,6 @@
 .expertise {
 	background-color: var(--high-light);
+	height: auto;
 }
 
 .xp {
@@ -18,7 +19,6 @@
 	gap: 16px;
 }
 .xp-description p {
-	font-size: 1.6rem;
   text-align: left;
   width: 100%;
 }
@@ -31,7 +31,6 @@
 	width: 52%;
 	height: 100%;
 	margin-bottom: 40px;
-	margin-top: -100px;
 }
 
 .component {
@@ -42,6 +41,7 @@
 	background-color: var(--high-light);
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: -80px;
 	transition: transform 0.3s ease-in-out;
 }
 

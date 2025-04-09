@@ -1,0 +1,209 @@
+.contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--high-pure);
+	font-family: var(--fonte-texto);
+}
+
+.form-container {
+	width: 46%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.chamada {
+	margin-bottom: 32px;
+}
+
+.chamada h2 {
+	color: var(--cor-fundo-escuro);
+	text-align: center;
+	font-family: var(--fonte-titulo);
+	font-size: 2.4rem;
+	font-weight: 700;
+	margin-bottom: 11px;
+}
+
+.chamada p {
+	font-size: var(--p);
+	text-align: center;
+	color: #555b69;
+}
+
+/* FORMULÁRIO */
+
+form {
+	width: 100%;
+}
+
+form p {
+	font-size: 1.4rem;
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+label,
+input,
+textarea,
+button {
+	display: block;
+}
+
+input,
+textarea,
+button {
+	width: 100%;
+	font: inherit;
+	padding: 1.25rem;
+	font-weight: 700;
+}
+
+input,
+textarea {
+	margin-bottom: 1rem;
+	color: var(--cor-branca);
+	background: #32364431;
+	border: 0.125rem solid transparent;
+	border-radius: 1.125rem;
+	transition: border-color 0.3s,
+		box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+	outline: none;
+	border-color: var(--azul-500);
+	box-shadow: 0 0 0 0.3125rem var(--azul-300);
+}
+
+label {
+	margin-bottom: 0.5rem;
+	color: #84868f;
+}
+
+textarea {
+	min-height: 12.5rem;
+	resize: vertical;
+}
+
+.form-btn {
+	width: 60%;
+	padding: 24px 60px;
+	justify-self: center;
+	font-size: var(--p);
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;outline: none;
+	background-color: transparent;
+	border: 2px solid var(--azul-500);
+	color: var(--azul-500);
+	border-radius: 99px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+	transition: all 0.3s ease-in-out;	
+	background-color: var(--azul-500);
+	color: var(--high-pure);
+}
+
+.form-btn:disabled {
+	cursor: not-allowed;
+	background-color: #555b69;
+}
+
+/* MAPA */
+
+.map {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map h2 {
+	color: var(--cor-fundo-escuro);
+	text-align: center;
+	font-family: var(--fonte-titulo);
+	font-size: 2.4rem;
+	font-weight: 700;
+  text-transform: uppercase;
+	margin-bottom: 48px;
+}
+
+.adress-map {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mapa {
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+ .map-content {
+  padding-inline: 20px;
+}
+
+.map-content p {
+  font-size: 1.4rem;
+}
+
+.adress {
+  margin-bottom: 18px;
+}
+
+.adress,
+.business-hours {
+  display: flex;
+  align-items: center;
+}
+
+i.fa-location-dot, 
+.fa-clock {
+  width: 24px;
+  font-size: 24px;
+  margin-right: 16px;
+  color: var(--azul-500);
+}
+
+/* POPUPS */
+
+.popup-message {
+	position: fixed;
+	top: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #4caf50;
+	color: var(--cor-branca);
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	z-index: 2;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.popup-message.error {
+	background: #d9534f;
+}
+
+.popup-message.fade-out {
+	opacity: 0;
+}
+
+/* Borda vermelha para campos não preenchidos */
+.error-border {
+	border: 2px solid #d9534f !important;
+}
