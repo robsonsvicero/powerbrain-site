@@ -115,11 +115,11 @@ body {
   transition: all 1s;
 }
 
-.description {
+.left-entry {
   transform: translateX(-100%);
 }
 
-.section-banner {
+.right-entry {
   transform: translateX(100%) !important;
 }
 
